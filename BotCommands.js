@@ -6,8 +6,8 @@ module.exports = {
     fetchSubRedditPosts().then((posts) => {
       const { title, url, subreddit_name_prefixed: subreddit } = getRandomPost(posts)
       msg.channel.send(title + "\n" + url + "\n" + "from " + subreddit)
-    }).catch((e) => {
-      console.log(e)
+    }).catch((error) => {
+      console.log(error)
       msg.channel.send("Unable to download memes")
     })
   }

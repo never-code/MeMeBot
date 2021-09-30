@@ -9,8 +9,8 @@ module.exports = {
       axios.get(`https://www.reddit.com/${subreddit}/.json`).then((resp) => {
         console.log(subreddit)
         resolve(resp.data.data.children)
-      }).catch((err) => {
-        reject(err)
+      }).catch((error) => {
+        reject(error)
       })
     })
   }
