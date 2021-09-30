@@ -3,7 +3,7 @@ const botCommands = require('./BotCommands');
 const { getCommandAndArguments } = require('./utils/getCommandAndArguments');
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
-const TOKEN = process.env.H_TOKEN;
+const TOKEN = process.env.TOKEN;
 const PREFIX = "!";
 client.login(TOKEN);
 
